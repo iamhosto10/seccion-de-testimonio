@@ -8,14 +8,7 @@ html,body{
   background-color: #f5f6f7;
 }
 
-h1{
-  max-width: 940px;
-  font-size: 2.5em;
-  font-family: Lato, sans-serif;
-  font-weight: 700;
-  line-height: 1.1;
-  margin: 40px 0;
-}
+
 
 .app{
   min-height: 100vh;
@@ -25,11 +18,34 @@ h1{
   justify-content: center;
   text-align:center;
 }
-
 .contenedor-principal{
   min-height: 600px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+
+
+@media screen and (min-width:992px){
+  .h1{
+    max-width: 940px;
+    font-size: 2.5em;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 40px 0;
+  }
+}
+
+@media screen and (max-width: 991px){
+  .h1{
+    font-size: 1rem!important; 
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 40px 0;
+    align-self: center;
+    text-align: center;
+  }
 }
